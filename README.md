@@ -31,6 +31,7 @@ After the prompt create some events using KEY:BODY, for example 3:4
 
 ## Create Java project from Maven archetype
 
+````
 mvn archetype:generate \
       -DarchetypeGroupId=org.apache.beam \
       -DarchetypeArtifactId=beam-sdks-java-maven-archetypes-examples \
@@ -40,11 +41,14 @@ mvn archetype:generate \
       -Dversion="0.1" \
       -Dpackage=org.apache.beam.examples \
       -DinteractiveMode=false
+````
 
 ## Execute Bean streaming application
 
+````
 mvn compile exec:java -Dexec.mainClass=org.apache.beam.examples.WordCount \
      -Dexec.args="--inputFile=pom.xml --output=./output/counts" -Pdirect-runner
+````
 
 ## Clean up
 
