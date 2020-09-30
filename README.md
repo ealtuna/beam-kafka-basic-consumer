@@ -53,3 +53,7 @@ mvn compile exec:java -Dexec.mainClass=org.apache.beam.examples.WordCount \
 ## Clean up
 
 docker-compose down
+
+## References
+
+https://github.com/confluentinc/demo-scene/blob/master/ksql-troubleshooting/docker-compose.yml
